@@ -6,12 +6,4 @@ node {
 
         checkout scm
     }
-    
-    stage('Build image') {
-        /* This builds the actual image */
-
-        app = docker.build("abdelfatahmaher/node:v1.0")
-    }
-
-    
 }
